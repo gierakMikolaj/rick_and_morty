@@ -34,9 +34,20 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  ferry: ^0.10.4
-  gql_http_link: ^0.4.0
   get_it: ^7.6.0
+  ferry: ^0.10.4
+  ferry_hive_store: ^0.4.4
+  ferry_cache: ^0.5.5
+  ferry_exec: ^0.1.4
+  normalize: ^0.5.5
+  gql: ^0.14.1-alpha+1660256327612
+  gql_link: ^0.4.2-alpha+1635885531659
+  gql_http_link: ^0.4.4+1
+  gql_error_link: ^0.2.0
+  gql_exec: ^0.3.2-alpha+1635885531651
+  gql_code_builder: ^0.2.0
+  gql_dio_link: ^0.2.2-alpha+1635885531750
+  gql_dedupe_link: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -49,12 +60,15 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
   ferry_generator: ^0.4.4
-  build_runner: ^2.2.0
+  freezed: 2.0.3 # can't update to 2.0.5 until we can use analyzer 4.0
+  build_runner: ^2.2.1
 
 #dependency_overrides:
 #  gql: 0.13.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+dependency_overrides:
+  analyzer: ^3.4.1
 
 # The following section is specific to Flutter.
 flutter:
