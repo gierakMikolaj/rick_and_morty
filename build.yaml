@@ -4,11 +4,11 @@ targets:
       ferry_generator|graphql_builder:
         enabled: true
         options:
-          schema: rick_and_morty|lib/schema.graphql
+          schema: rick_and_morty|graphql/schema.graphql
           when_extensions:
             when: true
             maybeWhen: true
       ferry_generator|serializer_builder:
         enabled: true
         options:
-          schema: rick_and_morty|lib/schema.graphql
+          schema: rick_and_morty|graphql/schema.graphql
